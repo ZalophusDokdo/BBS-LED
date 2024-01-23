@@ -1,0 +1,107 @@
+/*
+   Copyright 2023 Benjamin (BMK: Beommin Kim - 김범민)
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+*/
+body {
+	color:#000000;
+/*	background-color: #ffffff; /* ... */
+/*	background-color: #f5c904; /* ... */
+/*	background-color: #000000; /* ... */
+/*	background-color: transparent; /* ... */
+	margin:0;
+	overflow: hidden; /* Hide scrollbars */
+	overflow-x: hidden; overflow-y: hidden;
+}
+
+/* 흐르는 이미지 슬라이드 - S - */
+#testbox {
+   overflow:hidden;
+   position:relative;
+/*   border:0px solid red;
+   width:640px; /* 테스트를 위한 임시 값*/
+   height:208px;
+   transform: rotate(180deg); /* 이미지 뒵집기 */
+}
+
+.test {
+   width:832px; /* 보여야 하는 이미지 + 클론이미지 전체 합 */
+   height:100%;
+   display:flex;
+   flex-wrap:nowrap;
+   animation: bannermove 25s linear infinite; /* 앞뒤로 움직이기 */
+   animation-direction: alternate;
+}
+   
+.test > div {
+   flex:0 0 auto;
+   width:208px;
+   height:208px;
+   line-height:208px;
+/*   background-color:#000; /* ... */
+   vertical-align:top;
+   text-align:center;
+}
+
+.notice01-01 { grid-area: 1 / 1 / 2 / 2; transform: rotate(0deg); /* 첫번째 칸 이미지 뒤집기 */ }
+.notice01-02 { grid-area: 1 / 2 / 2 / 3; transform: rotate(0deg); /* 두번째 칸 이미지 뒤집기 */ }
+.notice01-03 { grid-area: 1 / 3 / 2 / 4; transform: rotate(0deg); /* 세번째 칸 이미지 뒤집기 */ }
+.notice01-04 { grid-area: 1 / 4 / 2 / 5; transform: rotate(0deg); /* 네번째 칸 이미지 뒤집기 */ }
+
+img {
+   width:100%;
+   height:100%;
+   filter: brightness(100%);
+   filter: contrast(100%);
+   transform: rotate(180deg); /* 각 개별 이미지 일괄 뒤집기 */
+}
+
+.test > .clone {
+/*   background-color:green;
+   opacity:.4; /*...*/
+}
+
+@keyframes bannermove { /* 앞뒤로 움직이기 */
+     0% { transform: translate(0, 0); }
+  100% { transform: translate(-100%, 0); }
+}
+/* 흐르는 이미지 슬라이드 - E - */
+
+/* 이미지 회전 - S - */
+.img { animation: rotate_image 10s ease-in-out infinite; transform-origin: 50% 50%; }
+@keyframes rotate_image{
+    50% {
+/*        transform: rotate(360deg); /* 회전/고정 */
+    }
+}
+div {
+/*      width: 1920px; /* ... */
+/*      height: 1080px; /* ... */
+/*      background: red; /* ... */
+/*      position: relative; /* ... */
+      /*name duration timing-function delay iteration-count direction fill-mode play-state*/
+      animation: move 5s infinite;
+}
+div:hover {
+/*      background: blue; /* ... */
+      animation-play-state: paused;
+}
+div:active {
+/*      background: yellow; /* ... */
+      animation-play-state: running;
+}
+@keyframes move {
+      from { left: 0px; }
+      to   { left: 0.1px; } /* 80px */
+}
+/* 이미지 회전 - E - */
