@@ -29,7 +29,7 @@ const updateTime = () => {
   let date = new Date(),
     secToDeg = (date.getSeconds() / 60) * 360,
     minToDeg = (date.getMinutes() / 60) * 360,
-    hrToDeg = (date.getHours() / 12) * 360;
+    hrToDeg = (date.getHours() / 12) * 360 + (date.getMinutes() / 2);
 
   // Rotate the clock hands to the appropriate degree based on the current time
   secondHand.style.transform = `rotate(${secToDeg}deg)`;
