@@ -49,14 +49,16 @@ body.dark {
   position: absolute;
   inset: 5px; /* Clock Font Position */
   text-align: center;
-  transform: rotate(calc(var(--i) * (360deg / 12)));
+/*  transform: rotate(calc(var(--i) * (360deg / 12))); */
+transform: rotate(calc(30deg * var(--i)));
 }
 .clock label span {
   display: inline-block;
-  font-size: 30px; /* Clock Font Size */
+  font-size: 60px; /* Clock Font Size */
   font-weight: 600;
   color: var(--black-color);
-  transform: rotate(calc(var(--i) * (-360deg / 12)));
+/*  transform: rotate(calc(var(--i) * (-360deg / 12))); */
+  transform: rotate(calc(-30deg * var(--i)));
 }
 .container .indicator {
   position: absolute;
