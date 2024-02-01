@@ -53,7 +53,7 @@ body.dark {
 }
 .clock label span {
   display: inline-block;
-  font-size: 60px; /* Clock Font Size */
+  font-size: 30px; /* Clock Font Size */
   font-weight: 600;
   color: var(--black-color);
   transform: rotate(calc(var(--i) * (-360deg / 12)));
