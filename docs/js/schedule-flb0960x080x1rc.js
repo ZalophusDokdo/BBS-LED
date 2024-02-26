@@ -39,11 +39,11 @@ var hour = function() {
 //		{	location.href = './breaktime-15h-flb0960x080x1rc.html';		}
 
 		if (hh >= 8 && hh <= 17 && mm < 59)
-		{	bname = "./media/background_transparency.png";
+		{	bname = "./image/background_transparency.png";
 			bcss = "position: relative;";
 		}
 		else
-		{	bname = "./media/foreground_blacksky.png";
+		{	bname = "./image/foreground_blacksky.png";
 			bcss = "position: absolute;";
 			location.href = './sleep-flb0960x080x1rc.html';
 		}
