@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\style.css">
+    <title>Weather</title>
+</head>
+
+<body>
+        <div class="container">
+            <input type="radio" name="tab" checked="checked" id="weather" />
+            <section class="weather">
+<!--
+                <h1>Weather</h1>
+                <label for="weather"></label>
+-->
+                <div class="contents">
+                    <div class="js-weather weather-container">
+                        <div class="weather__box1">
+                            <img class="weather__icon">
+                            <div class="weather__description"></div>
+                        </div>
+                        <div class="weather__box2">
+                            <div class="weather__temperature"></div>
+                            <div class="weather__location"></div>
+                        </div>
+                        <div class="weather__box3">
+                            <div class="weather__humidity"></div>
+                            <div class="weather__humidityText">Humidity</div>
+                        </div>
+                        <div class="weather__box4">
+                            <div class="weather__clock">
+                                <span class="js-clock weather__clock">
+                                    00:00
+                                </span>
+                            </div>
+                            <div class="weather__clockText">Clock</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    <script src="js\clock.js"></script>
+    <script src="js\weather.js"></script>
+</body>
+
+</html>
