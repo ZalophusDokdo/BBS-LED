@@ -56,10 +56,11 @@ body {
 .notice01-15 { grid-area: 1 / 15 / 2 / 16; }
 .notice01-16 { grid-area: 1 / 16 / 2 / 17; }
 
-.notice02-01 { grid-area: 2 / 1 / 3 / 2; }
-.notice02-02 { grid-area: 2 / 2 / 3 / 3; }
-.notice02-03 { grid-area: 2 / 3 / 3 / 4; }
-.notice02-04 { grid-area: 2 / 4 / 3 / 5; }
+.notice02 { grid-area: 2 / 1 / 3 / 5; transform: rotate(180deg); /* 두번째 줄 이미지 화면 뒤집기 */ }
+.notice02-01 { grid-area: 2 / 1 / 3 / 2; transform: rotate(180deg); /* 첫번째 칸 이미지 뒤집기 */ }
+.notice02-02 { grid-area: 2 / 2 / 3 / 3; transform: rotate(180deg); /* 두번째 칸 이미지 뒤집기 */ }
+.notice02-03 { grid-area: 2 / 3 / 3 / 4; transform: rotate(180deg); /* 세번째 칸 이미지 뒤집기 */ }
+.notice02-04 { grid-area: 2 / 4 / 3 / 5; transform: rotate(180deg); /* 네번째 칸 이미지 뒤집기 */ }
 .notice02-05 { grid-area: 2 / 5 / 3 / 6; }
 .notice02-06 { grid-area: 2 / 6 / 3 / 7; }
 .notice02-07 { grid-area: 2 / 7 / 3 / 8; }
